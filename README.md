@@ -30,11 +30,12 @@
 
 + 让一个元素里面的内容不蔓延到边框或者padding中，用background-clip：padding-box（在padding和内容区显示）/margin-box（在内容、border、padding中显示）/content-box（只在内容区域显示），设置banner图片上的分页器时就需要
         ```
-             .ban .ban-dot .dot-items{
-	                      float: left;
-	                      width: 10px;
-	                      height: 10px;
-	                      margin-top: 5px;
+
+         .ban .ban-dot .dot-items{  
+	                      float: left;  
+	                      width: 10px;  
+	                      height: 10px;  
+	                      margin-top: 5px;  
 	                      margin-left: 5px;
 	                      border: 5px solid transparent;
 	                      background-clip: padding-box;
