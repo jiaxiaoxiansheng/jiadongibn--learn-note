@@ -1,4 +1,7 @@
-### HTML与CSS
+### HTML与CSS基础
+
++ rowspan：单元格占据的行，colspan单元格占据的列
+
 + 让鼠标变成小手样式，cursor:pointer。input原本的边框消失outline：none。表单value值：设置默认值和placeholder类似。
 
 + 嵌套崩塌：给子类设置margin-top，但是作用在了父类元素上，解决办法，设置overflow
@@ -13,7 +16,7 @@
 
 7. 透明度:background-color:rgba(0,0,0,0.5);opacity:0.5
 
-+ 如果一个a标签里面有一个图片一行文字![a里面有图片和文字]（C:\Users\贾小先生\Desktop\笔记1.jpg）给元素设置一个padding，然后把图片设置背景图片，用背景图片位置，或者给背景图片设置一个div，用绝对定位
++ 如果一个a标签里面有一个图片一行文字![a里面有图片和文字]给元素设置一个padding，然后把图片设置背景图片，用背景图片位置，或者给背景图片设置一个div，用绝对定位
 
 * 当把一个元素转换成行内块元素后，和文字对齐，要在行内块元素中设置vertival：middle
 
