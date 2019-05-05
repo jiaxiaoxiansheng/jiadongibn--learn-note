@@ -1,12 +1,12 @@
 ### JS第二天笔记
 + getTime（）时间戳，获得距离1970年1月1日0时0分的毫秒数，Math.random()取随机数，Math.pow()取几次方
-+ 逻辑运算符:且&&：碰到假返回，返回值是布尔值或者操作值
-             示例：exp1 && exp2
-             解析： 如果 exp1 能被转换为 false，则返回 exp1；如果exp1 能被转换为 true，则返回 exp2。
-             或||：碰到真返回
-             逻辑或 ||
-             示例：exp1 || exp2
-             解析： 如果 exp1 能被转换为 false，则返回 exp2；如果exp1 能被转换为 true，则返回 exp1。
++ 逻辑运算符:且&&：碰到假返回，返回值是布尔值或者操作值  
+             示例：exp1 && exp2  
+             解析： 如果 exp1 能被转换为 false，则返回 exp1；如果exp1 能被转换为   true，则返回 exp2。  
+             或||：碰到真返回  
+             逻辑或 ||  
+             示例：exp1 || exp2  
+             解析： 如果 exp1 能被转换为 false，则返回 exp2；如果exp1 能被转换为   true，则返回 exp1。  
 + 数据类型之间的转换，能转换成false的值有null，0，NaN，空字符串（''）undefined
 + if语句（）具有隐式转换，在判断条件时，要注意把数值型字符转换成number类型计算（parseInt，parseFloat）
 + 三元运算符：语法格式：条件？条件成立为true，执行这里的代码：否则执行这里的代码
