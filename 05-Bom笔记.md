@@ -105,3 +105,42 @@ $("ul").onclick = function (e){
 2. `onmousedown`鼠标按下的事件
 3. `onmousemove`鼠标拖拽的事件
 4. `onmouseup`鼠标抬起事件
+
+###`client`家族
+> 家族成员`clientWidth` `clientHeight` `clientLeft` `clientTop`
+
+#### `clientWidth` `clientHeight`
++ 检测盒子的宽高:盒子自身的宽高+padding,内容不溢出
++ offsetWidth:盒子自身宽高+padding+border
++ scrollWidth:内容宽高+padding,内容溢出,显示内容宽高
++ document.documentElement.clientWidth  获取游览器可是区域宽高
+
+#### `clientTop` `clientLeft`		只读
+> 表示内容区域左上角相对于整个元素左上角的位置   实际上就是border的宽度
+
+### 获取元素样式
+
+> 内嵌样式  行内样式  可通过 `ele.style.styleName`获取
+>
+> 内联样式和外联样式可通过以下方式获取
+```
+function getStyle(ele,styleName){
+	if(ele.currentStyle){
+		return ele.currentStyle[styleName];
+	}else{
+		return window.getComputedStyle(ele,null)[styleName];
+	}
+}
+
+```
+### 去对象属性,如果该属性是变量,需要用[]的形式获取
+```
+var abc = "name";
+var user = {
+	name:'张三',
+	age:20
+}
+console.log(user[abc]);
+console.log(user.name)
+
+```
