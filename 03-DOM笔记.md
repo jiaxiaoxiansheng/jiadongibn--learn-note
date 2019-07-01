@@ -9,7 +9,7 @@
 ####节点间的获取
 + 节点间获取是属性的形式   节点.xxx
 + 父节点获取：节点.parentNode,一个节点只有一个父节点
-+ 兄弟节点、孩子节点存在游览器兼容问题，嫡出能在ie5678上使用（嫡出在ie5678获得的是元素节点，在火狐获得是任何节点），庶出在ie10以及火狐谷歌游览器上使用（庶出在火狐只能获得是元素节点，在ie5678不能使用），解决兼容，`this.previousElementSibling || this previoSibling`
++ 兄弟节点、孩子节点存在游览器兼容问题，嫡出能在ie5678上使用（嫡出在ie5678获得的是元素节点，在火狐获得是任何节点），庶出在ie10以及火狐谷歌游览器上使用（庶出在火狐只能获得是元素节点，在ie5678不能使用），解决兼容，`this.previousElementSibling || this previouSibling`
 + 兄弟节点：上一个兄弟节点previoSibling（嫡出），previousElementSibling（庶出），下一个兄弟节点nextSibling，nextElementSibling
 + 孩子节点：第一个孩子节点firstChild/firstElementChild
 &emsp;&emsp;&emsp;&emsp;下一个孩子节点nextChild/nextElementChild
