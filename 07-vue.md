@@ -29,6 +29,7 @@
   + export 必须使用{},可以向外导出多个成员,import接收时,也必须使用{}变量名字也要相同
   + import xxx from "模块文件目录",获取default输出的变量
 
+> array.from 把一个类数组对象转换成数组  把字符串转换成数组
 
 #### reduce 方法
 > 一般用来数组求和乘积,还可以用在数组去重,计算数组中元素出现的次数
@@ -357,7 +358,7 @@ computed:{
     age:'age'//第一种,'age'直接找到state中的age变量
     age:state => state.age//第二种
     age(state){
-      return state.age + this.str//第三种,这里可以和路由中的属性做操作
+      return state.age + this.str//第三种,这里可以和路由中的属性做操作,这种有this,其它没有,能操作`this.$route`
     }
   })
   ```
@@ -450,3 +451,7 @@ export default new Vuex.Store({
 1. 如果操作的是vuex中的数据则使用,mutation,getters,actions方法
 2. getters不能传值,不是方法,可以让数据随着变化,用在computed中
 3. mutation:方法,能传递值,通过某个操作事件来修改vuex的值
+
+
+### vant插件中的问题
+> 替换原有的样式,需要写在`<style lang='scss'>`不能写在带有`scope`中

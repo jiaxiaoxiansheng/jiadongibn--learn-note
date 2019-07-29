@@ -84,7 +84,7 @@
 
 ###事件委托
 > 事件原理:通过监听父元素,来给子元素绑定事件(真正触发事件的元素)
-> 由于事件的冒泡机制,可以使用事件委托给元素添加事件,多用于ul监听li事件
+> 由于事件的冒泡机制,可以使用事件委托给元素添加事件,多用于ul自动生成的li,然后监听li事件
 ```
 $("ul").onclick = function (e){
 				e = event || window.event;
@@ -144,3 +144,9 @@ console.log(user[abc]);
 console.log(user.name)
 
 ```
+
+### 在动态生成的标签中添加点击事件
+
+>` pageStr += '<li '+(i==1?'class="active page-items"':'class="page-items"')+' onclick="initPage('+i+',this)">'+i+'</li>'`
++ `(i==1?'class="active page-items"':'class="page-items"')`: 给生成的某个li添加动态样式
++ ` onclick="initPage('+i+',this)"`: 动态添加点击事件,`this`点击的标签

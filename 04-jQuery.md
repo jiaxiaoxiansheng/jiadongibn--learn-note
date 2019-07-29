@@ -4,8 +4,8 @@
 + `$(function(){})`
 
 ###事件绑定
-+ Js:  .onclick = function(){ }:原生js中处理事件都是属性
-+ Jquery:   click(function(){  });jquery中处理事件是方法()
++ Js:  .onclick = function(){ }:原生js中处理事件都是属性,dom不能同时给多个`li`绑定事件
++ Jquery:   click(function(){  });jquery中处理事件是方法();内置迭代器,能同时绑定多个事件(多个li),函数里面`$(this)`就是点击的那一个
 
 ###选择器
 ####基本选择器
@@ -27,11 +27,11 @@
 + $('node').eq(index):查找第index-1匹配的元素
 + $('node').children('xx')查找孩子为xx的所有元素
 + $('node').siblings():查找所有兄弟元素,不包括自己
-+ $('node').parent('xx'):查找id为xx的父元素,亲的
++ $('node').parent():查找id为xx的父元素,亲的
 + $('node').find('xx'):查找孩子(子子孙孙)为xx的所有元素
 + $('node').next():查找为node的下一个兄弟
 + $('node').nextAll();$('node').nextEnd()
-+ $('node').parent():查找node的所有父元素
++ $('node').parents():查找node的所有父元素   parents('xx'):查找id为xx的父元素
 + $('node').parentAll();$('node').parentEnd()
 + $('node').prev():查找为node的上一个元素
 ####属性

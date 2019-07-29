@@ -13,12 +13,14 @@
 + 兄弟节点：上一个兄弟节点previoSibling（嫡出），previousElementSibling（庶出），下一个兄弟节点nextSibling，nextElementSibling
 + 孩子节点：第一个孩子节点firstChild/firstElementChild
 &emsp;&emsp;&emsp;&emsp;下一个孩子节点nextChild/nextElementChild
-&emsp;&emsp;&emsp;&emsp;所有孩子节点childNode(嫡出)，childNode.nodetype=1，也可以只获得子元素节点
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;/children（庶出）
+&emsp;&emsp;&emsp;&emsp;所有孩子节点childNode(嫡出)(不用)，childNode.nodetype=1，也可以只获得子元素节点
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;/children（庶出）(常用)  父节点获取：节点.parentNode,
 
 ####节点的操作（增删改查）
 + 节点的操作是函数或者方法node.xxx()
-+ 创建一个新的节点：document..createElement();创建的新的节点必须插入到网页中，才能显示
++ 创建一个新的节点：var node = document..createElement();创建的新的节点必须插入到网页中，才能显示
+  - node.innerText = ''
+  - node.parentNode.append(node)
 + 插入节点：父节点.append（要插入的节点），同一个节点不能反复插入
 &emsp;&emsp;&emsp;&emsp;父节点.insertBefore(要插入的节点，参考节点)，如果参考节点为空，则插入到最后面
 + 删除节点：父节点.removeChild（删除的节点）
